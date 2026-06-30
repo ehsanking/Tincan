@@ -4,7 +4,7 @@ name: Build app
 # binaries as downloadable artifacts on every push to main (and on demand).
 on:
   push:
-    branches: [main]
+    branches: [main, "claude/**"]
     paths:
       - "app/**"
       - "packages/**"
