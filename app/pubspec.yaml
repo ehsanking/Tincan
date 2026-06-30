@@ -1,0 +1,36 @@
+name: tincan
+description: "Tincan — serverless, end-to-end-encrypted messenger."
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Tincan engine + transport (the tested packages in this repo).
+  tincan_core:
+    path: ../packages/tincan_core
+  tincan_net:
+    path: ../packages/tincan_net
+
+  crypto: ^3.0.0
+
+  # Contact-card QR display.
+  qr_flutter: ^4.1.0
+
+  # Encrypted backup to Google Drive (the blob is sealed on-device first).
+  google_sign_in: ^6.2.1
+  googleapis: ^13.2.0
+  extension_google_sign_in_as_googleapis_auth: ^2.0.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
