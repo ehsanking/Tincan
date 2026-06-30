@@ -16,6 +16,7 @@ export 'src/identity/identity.dart';
 export 'src/identity/short_code.dart';
 export 'src/mnemonic/mnemonic.dart';
 export 'src/mnemonic/wordlist_english.dart' show englishWordlist;
+export 'src/session/contact_card.dart';
 export 'src/session/secure_session.dart';
 export 'src/session/signal_account.dart';
 export 'src/transport/transport.dart';
