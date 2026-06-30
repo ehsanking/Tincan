@@ -26,8 +26,9 @@
 - [x] هسته‌ی رمزنگاری: BIP39 + هویت (Ed25519/X25519) + کد کوتاه + AEAD
 - [x] نشستِ X3DH + Double Ratchet (libsignal) با هویتِ قطعی از seed
 - [x] صفِ تحویل: نگه‌داری روی فرستنده + تلاشِ مجددِ ۵–۱۰ دقیقه‌ای تا ACK
-- [x] ۴۹ تست سبز · analyzer بدون خطا
-- [ ] ترابریِ واقعیِ P2P (mDNS/DHT/NAT با dart_libp2p)
+- [x] ترابریِ P2P واقعی روی **TCP + Noise + Yamux** (`packages/payk_net`، dart_libp2p) — آزموده روی loopback
+- [x] ۵۲ تست سبز (۴۹ core + ۳ net) · analyzer بدون خطا
+- [ ] افزودنِ UDX + mDNS + DHT + عبور از NAT (روی همان interface)
 - [ ] ذخیره‌سازیِ رمزشده (drift + sqlite3mc)
 - [ ] پوسته‌ی Flutter (Android + Windows)
 
